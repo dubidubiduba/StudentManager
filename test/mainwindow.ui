@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1500</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1500</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1500</width>
+      <height>800</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>查询(&amp;F)</string>
+    </property>
+    <addaction name="nameaction"/>
+    <addaction name="idaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>显示信息(&amp;S)</string>
+    </property>
+    <addaction name="Staction"/>
+    <addaction name="separator"/>
+    <addaction name="Acaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_C">
+    <property name="title">
+     <string>数据操作(&amp;C)</string>
+    </property>
+    <addaction name="addaction"/>
+    <addaction name="deleteaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_R">
+    <property name="title">
+     <string>成绩统计(&amp;R)</string>
+    </property>
+    <addaction name="ScoreStaaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_r">
+    <property name="title">
+     <string>排名(&amp;r)</string>
+    </property>
+    <addaction name="Rankmathaction"/>
+    <addaction name="Rankchineseaction"/>
+    <addaction name="Ranktotalaction"/>
+   </widget>
+   <addaction name="menu_S"/>
+   <addaction name="menu"/>
+   <addaction name="menu_C"/>
+   <addaction name="menu_R"/>
+   <addaction name="menu_r"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="nameaction">
+   <property name="text">
+    <string>按名字查询</string>
+   </property>
+  </action>
+  <action name="idaction">
+   <property name="text">
+    <string>按学号查询</string>
+   </property>
+  </action>
+  <action name="Staction">
+   <property name="text">
+    <string>显示学生信息</string>
+   </property>
+  </action>
+  <action name="Acaction">
+   <property name="text">
+    <string>显示账户信息</string>
+   </property>
+  </action>
+  <action name="addaction">
+   <property name="text">
+    <string>添加学生信息</string>
+   </property>
+  </action>
+  <action name="deleteaction">
+   <property name="text">
+    <string>删除信息</string>
+   </property>
+  </action>
+  <action name="ScoreStaaction">
+   <property name="text">
+    <string>成绩统计展示</string>
+   </property>
+  </action>
+  <action name="Rankmathaction">
+   <property name="text">
+    <string>数学排名</string>
+   </property>
+  </action>
+  <action name="Rankchineseaction">
+   <property name="text">
+    <string>语文排名</string>
+   </property>
+  </action>
+  <action name="Ranktotalaction">
+   <property name="text">
+    <string>总分排名</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
